@@ -123,7 +123,9 @@ class QuranTeb extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.asset("assets/images/qur2an_screen_logo.png"),
+        Expanded(
+            flex: 1,
+            child: Image.asset("assets/images/qur2an_screen_logo.png")),
         Container(
           width: double.infinity,
           height: 2,
@@ -143,23 +145,24 @@ class QuranTeb extends StatelessWidget {
           margin: EdgeInsets.only(top: 4),
         ),
         Expanded(
+            flex: 3,
             child: ListView.separated(
-          itemBuilder: (buildContext, index) {
-            return VersenameWidget(
-              title: names[index],
-              index: index,
-            );
-          },
-          itemCount: names.length,
-          separatorBuilder: (buildContext, index) {
-            return Container(
-              color: Theme.of(context).primaryColor,
-              width: double.infinity,
-              height: 1,
-              margin: EdgeInsets.symmetric(horizontal: 24),
-            );
-          },
-        ))
+              itemBuilder: (buildContext, index) {
+                return VersenameWidget(
+                  title: names[index],
+                  index: index,
+                );
+              },
+              itemCount: names.length,
+              separatorBuilder: (buildContext, index) {
+                return Container(
+                  color: Theme.of(context).primaryColor,
+                  width: double.infinity,
+                  height: 1,
+                  margin: EdgeInsets.symmetric(horizontal: 24),
+                );
+              },
+            ))
       ],
     );
   }
