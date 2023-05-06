@@ -18,6 +18,10 @@ class MyApplication extends StatelessWidget {
         SuraDetailsScreen.routeName: (buildContext) => SuraDetailsScreen(),
       },
       theme: ThemeData(
+          elevatedButtonTheme: ElevatedButtonThemeData(
+              style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all<Color>(Color(0xFFB7935F)))),
           progressIndicatorTheme:
               ProgressIndicatorThemeData(color: Color(0xFFB7935F)),
           cardColor: Colors.white,
