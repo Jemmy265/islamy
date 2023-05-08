@@ -4,6 +4,8 @@ import 'package:islamy/ui/Home/Quran/Quran_Tab.dart';
 import 'package:islamy/ui/Home/Radio/Radio_Tab.dart';
 import 'package:islamy/ui/Home/Tasbeh/Tasbeh_Tab.dart';
 
+import '../My_theme_data.dart';
+
 class HomeScreen extends StatefulWidget {
   static const String routeName = 'Home';
 
@@ -19,7 +21,9 @@ class _HomeScreenState extends State<HomeScreen> {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/images/default_bg.png'),
+          image: AssetImage(Mythemedata.themeMode == ThemeMode.light
+              ? 'assets/images/default_bg.png'
+              : 'assets/images/dark_bg.png'),
           fit: BoxFit.fill,
         ),
       ),

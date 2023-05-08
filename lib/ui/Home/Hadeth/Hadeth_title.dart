@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:islamy/ui/Hadith_details/hadith_details.dart';
-
 import 'Hadeth.dart';
 
 class HadethtitleWidget extends StatelessWidget {
@@ -19,10 +18,9 @@ class HadethtitleWidget extends StatelessWidget {
         alignment: Alignment.center,
         child: Text(
           hadeth.title,
-          style: TextStyle(
-            fontSize: 24,
-          ),
-        ),
+          style: Theme.of(context).textTheme.bodyText1,
+
+      ),
       ),
     );
   }

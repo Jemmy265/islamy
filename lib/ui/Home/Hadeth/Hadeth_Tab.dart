@@ -22,7 +22,7 @@ class _HadethTebState extends State<HadethTeb> {
         Container(
           width: double.infinity,
           height: 2,
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).accentColor,
           margin: EdgeInsets.only(bottom: 4),
         ),
         Text(
@@ -34,7 +34,7 @@ class _HadethTebState extends State<HadethTeb> {
         Container(
           width: double.infinity,
           height: 2,
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).accentColor,
           margin: EdgeInsets.only(top: 4),
         ),
         Expanded(
@@ -51,7 +51,7 @@ class _HadethTebState extends State<HadethTeb> {
                         itemCount: allHadethList.length,
                         separatorBuilder: (buildContext, index) {
                           return Container(
-                            color: Theme.of(context).primaryColor,
+                            color: Theme.of(context).accentColor,
                             width: double.infinity,
                             height: 1,
                             margin: EdgeInsets.symmetric(horizontal: 24),

@@ -21,9 +21,7 @@ class VersenameWidget extends StatelessWidget {
         alignment: Alignment.center,
         child: Text(
           title,
-          style: TextStyle(
-            fontSize: 24,
-          ),
+          style: Theme.of(context).textTheme.bodyText1,
         ),
       ),
     );
