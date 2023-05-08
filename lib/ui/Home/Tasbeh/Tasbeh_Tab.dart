@@ -7,6 +7,12 @@ class TasbehTeb extends StatefulWidget {
 
 class _TasbehTebState extends State<TasbehTeb> {
   int tasbehNumber = 0;
+  int index = 0;
+  List<String> Names = [
+    "سبحان الله",
+    "الحمد الله",
+    "الله اكبر",
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -60,9 +66,17 @@ class _TasbehTebState extends State<TasbehTeb> {
               ElevatedButton(
                   onPressed: () {
                     tasbehNumber++;
+                    if (tasbehNumber == 33) {
+                      index++;
+                    } else if (tasbehNumber == 66) {
+                      index++;
+                    } else if (tasbehNumber == 99) {
+                      index = 0;
+                      tasbehNumber = 0;
+                    }
                     setState(() {});
                   },
-                  child: Text("سبحان الله"))
+                  child: Text(Names[index]))
             ],
           )
         ],
