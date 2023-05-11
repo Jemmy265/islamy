@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:islamy/ui/Hadith_details/hadith_details.dart';
 import 'package:islamy/ui/Home/Home_Screen.dart';
 import 'package:islamy/ui/My_theme_data.dart';
@@ -23,6 +25,17 @@ class MyApplication extends StatelessWidget {
       theme: Mythemedata.lightTheme,
       darkTheme: Mythemedata.darkTheme,
       themeMode: Mythemedata.themeMode,
+      localizationsDelegates: const [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: [
+        Locale('en'), // English
+        Locale('ar'), // Arabic
+      ],
+      locale: Locale("ar"),
     );
   }
 }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:islamy/ui/Home/Hadeth/Hadeth.dart';
 
+import '../My_theme_data.dart';
+
 class HadethDetailsScreen extends StatelessWidget {
   static const String routeName = "Hadeth-Details";
 
@@ -9,7 +11,9 @@ class HadethDetailsScreen extends StatelessWidget {
     return Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/images/default_bg.png'),
+            image: AssetImage(Mythemedata.themeMode == ThemeMode.light
+                ? 'assets/images/default_bg.png'
+                : 'assets/images/dark_bg.png'),
             fit: BoxFit.fill,
           ),
         ),
@@ -27,7 +31,6 @@ class HadethDetailsScreen extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(24),
                     ),
-                    color: Colors.white,
                     child: SingleChildScrollView(
                       child: Text(
                         args.content,
