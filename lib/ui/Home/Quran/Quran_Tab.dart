@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islamy/ui/Home/Quran/Verse_name.dart';
 
 class QuranTeb extends StatelessWidget {
@@ -129,17 +130,17 @@ class QuranTeb extends StatelessWidget {
         Container(
           width: double.infinity,
           height: 2,
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).accentColor,
           margin: EdgeInsets.only(bottom: 4),
         ),
         Text(
-          "Verse Name",
+          AppLocalizations.of(context)!.chapter_name,
           style: Theme.of(context).textTheme.headline5,
         ),
         Container(
           width: double.infinity,
           height: 2,
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).accentColor,
           margin: EdgeInsets.only(top: 4),
         ),
         Expanded(

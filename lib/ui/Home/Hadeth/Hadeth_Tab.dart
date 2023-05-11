@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islamy/ui/Home/Hadeth/Hadeth.dart';
 import 'package:islamy/ui/Home/Hadeth/Hadeth_title.dart';
 
@@ -26,7 +27,7 @@ class _HadethTebState extends State<HadethTeb> {
           margin: EdgeInsets.only(bottom: 4),
         ),
         Text(
-          "Hadeth Number",
+          AppLocalizations.of(context)!.hadeth_number,
           style: TextStyle(
             fontSize: 24,
           ),

@@ -8,10 +8,12 @@ class TasbehTeb extends StatefulWidget {
 class _TasbehTebState extends State<TasbehTeb> {
   int tasbehNumber = 0;
   int index = 0;
+  double angle = 0;
   List<String> Names = [
     "سبحان الله",
     "الحمد الله",
     "الله اكبر",
+    "لا اله الا الله",
   ];
 
   @override
@@ -29,9 +31,18 @@ class _TasbehTebState extends State<TasbehTeb> {
                   fit: BoxFit.cover,
                 ),
               ),
-              Container(
-                  margin: EdgeInsets.only(top: 80, bottom: 20),
-                  child: Image.asset("assets/images/body_sebha_logo.png")),
+              Transform.rotate(
+                angle: angle,
+                child: GestureDetector(
+                  onTap: tasbeeh,
+                  child: Container(
+                      margin: EdgeInsets.only(top: 80, bottom: 20),
+                      child: Image.asset(
+                        "assets/images/body_sebha_logo.png",
+                        fit: BoxFit.fitHeight,
+                      )),
+                ),
+              ),
             ],
           ),
           Column(
@@ -47,7 +58,7 @@ class _TasbehTebState extends State<TasbehTeb> {
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
-                    color: Color(0xFFC9B396),
+                    color: Theme.of(context).primaryColor,
                   ),
                   alignment: Alignment.center,
                   height: 60,
@@ -65,16 +76,7 @@ class _TasbehTebState extends State<TasbehTeb> {
               ),
               ElevatedButton(
                   onPressed: () {
-                    tasbehNumber++;
-                    if (tasbehNumber == 33) {
-                      index++;
-                    } else if (tasbehNumber == 66) {
-                      index++;
-                    } else if (tasbehNumber == 99) {
-                      index = 0;
-                      tasbehNumber = 0;
-                    }
-                    setState(() {});
+                    tasbeeh();
                   },
                   child: Text(Names[index]))
             ],
@@ -82,5 +84,20 @@ class _TasbehTebState extends State<TasbehTeb> {
         ],
       ),
     );
+  }
+
+  void tasbeeh() {
+    if (tasbehNumber == 32) {
+      tasbehNumber = 0;
+      if (index == 3) {
+        index = 0;
+      } else {
+        index++;
+      }
+    } else {
+      tasbehNumber++;
+    }
+    angle += 20;
+    setState(() {});
   }
 }
