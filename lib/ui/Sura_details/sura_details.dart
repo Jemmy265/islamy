@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:islamy/ui/Sura_details/Verse_content.dart';
+import 'package:provider/provider.dart';
 
-import '../My_theme_data.dart';
+import '../../providers/settings_provider.dart';
 
 class SuraDetailsScreen extends StatefulWidget {
   static const String routeName = "Sura-Details";
@@ -16,6 +17,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    var provider = Provider.of<SettingsProvider>(context);
     var args =
         ModalRoute.of(context)?.settings.arguments as SuraDetailsScreenArgs;
     if (chaptercontent.isEmpty) {
@@ -24,9 +26,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
     return Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(Mythemedata.themeMode == ThemeMode.light
-                ? 'assets/images/default_bg.png'
-                : 'assets/images/dark_bg.png'),
+            image: AssetImage(provider.getBackgroundImage()),
             fit: BoxFit.fill,
           ),
         ),
@@ -47,20 +47,20 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
                     child: chaptercontent.isEmpty
                         ? Center(child: CircularProgressIndicator())
                         : ListView.separated(
-                            itemBuilder: (buildContext, index) {
-                              return VerseContent(chaptercontent[index]);
-                            },
-                            itemCount: chaptercontent.length,
-                            separatorBuilder: (buildContext, index) {
-                              return Container(
-                                color: Theme.of(context).accentColor,
-                                width: double.infinity,
-                                height: 1,
-                                margin: EdgeInsets.symmetric(
-                                    horizontal: 64, vertical: 12),
-                              );
-                            },
-                          ),
+                      itemBuilder: (buildContext, index) {
+                        return VerseContent(chaptercontent[index]);
+                      },
+                      itemCount: chaptercontent.length,
+                      separatorBuilder: (buildContext, index) {
+                        return Container(
+                          color: Theme.of(context).accentColor,
+                          width: double.infinity,
+                          height: 1,
+                          margin: EdgeInsets.symmetric(
+                              horizontal: 64, vertical: 12),
+                        );
+                      },
+                    ),
                   ),
                 ),
               ),

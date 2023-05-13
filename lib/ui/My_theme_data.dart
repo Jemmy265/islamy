@@ -32,25 +32,33 @@ class Mythemedata {
           selectedItemColor: Colors.black,
           unselectedItemColor: Colors.white),
       textTheme: const TextTheme(
-        headline3: TextStyle(
+        displaySmall: TextStyle(
           // screen title
           color: lightMainTextColor,
           fontSize: 32,
         ),
-        headline5: TextStyle(
+        headlineSmall: TextStyle(
           // sub headers
           color: lightMainTextColor,
           fontSize: 24,
         ),
-        bodyText1: TextStyle(
+        bodyLarge: TextStyle(
           fontSize: 24,
           color: lightMainTextColor,
         ),
-        bodyText2: TextStyle(
+        bodyMedium: TextStyle(
           fontSize: 20,
           color: lightMainTextColor,
         ),
-      ));
+      ),
+      bottomSheetTheme: const BottomSheetThemeData(
+          backgroundColor: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(12),
+              topRight: Radius.circular(12),
+            ),
+          )));
   static var darkTheme = ThemeData(
       elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
@@ -76,25 +84,31 @@ class Mythemedata {
           selectedItemColor: darkAccentColor,
           unselectedItemColor: Colors.white),
       textTheme: const TextTheme(
-        headline3: TextStyle(
+        displaySmall: TextStyle(
           // screen title
           color: darkMainTextColor,
           fontSize: 32,
         ),
-        headline5: TextStyle(
+        headlineSmall: TextStyle(
           // sub headers
           color: darkMainTextColor,
           fontSize: 24,
         ),
-        bodyText1: TextStyle(
+        bodyLarge: TextStyle(
           fontSize: 24,
           color: darkMainTextColor,
         ),
-        bodyText2: TextStyle(
+        bodyMedium: TextStyle(
           fontSize: 20,
           color: darkMainTextColor,
         ),
-      ));
-
-  static ThemeMode themeMode = ThemeMode.dark;
+      ),
+      bottomSheetTheme: const BottomSheetThemeData(
+          backgroundColor: darkPrimaryColor,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(12),
+              topRight: Radius.circular(12),
+            ),
+          )));
 }
