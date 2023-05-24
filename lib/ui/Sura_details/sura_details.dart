@@ -70,7 +70,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
   }
 
   void readfile(int ChapterIndex) async {
-    await Future.delayed(Duration(seconds: 5));
+    await Future.delayed(Duration(seconds: 1));
     String text =
         await rootBundle.loadString("assets/Files/${ChapterIndex + 1}.txt");
     chaptercontent = text.split('\n');

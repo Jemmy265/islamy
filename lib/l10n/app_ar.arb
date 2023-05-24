@@ -10,5 +10,6 @@
   "theme": "المظهر",
   "light": "فاتح",
   "dark": "داكن",
-  "language": "اللغة"
+  "language": "اللغة",
+  "tasbehnumber": "عدد التسبيحات"
 }
