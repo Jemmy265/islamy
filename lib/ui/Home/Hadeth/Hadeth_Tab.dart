@@ -77,7 +77,7 @@ class _HadethTebState extends State<HadethTeb> {
       Hadeth hadeth = Hadeth(title, content);
       hadethList.add(hadeth);
     }
-    await Future.delayed(Duration(seconds: 4));
+    await Future.delayed(Duration(seconds: 1));
     allHadethList = hadethList;
     setState(() {});
   }
