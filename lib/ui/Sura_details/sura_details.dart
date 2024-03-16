@@ -39,6 +39,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
               Container(
                 child: Expanded(
                   child: Card(
+                    color: Theme.of(context).primaryColor,
                     elevation: 24,
                     margin: EdgeInsets.symmetric(vertical: 48, horizontal: 12),
                     shape: RoundedRectangleBorder(
@@ -47,18 +48,18 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
                     child: chaptercontent.isEmpty
                         ? Center(child: CircularProgressIndicator())
                         : ListView.separated(
-                      itemBuilder: (buildContext, index) {
-                        return VerseContent(chaptercontent[index]);
-                      },
+                            itemBuilder: (buildContext, index) {
+                              return VerseContent(chaptercontent[index]);
+                            },
                       itemCount: chaptercontent.length,
                       separatorBuilder: (buildContext, index) {
                         return Container(
-                          color: Theme.of(context).accentColor,
-                          width: double.infinity,
-                          height: 1,
-                          margin: EdgeInsets.symmetric(
-                              horizontal: 64, vertical: 12),
-                        );
+                          color: Theme.of(context).hintColor,
+                                width: double.infinity,
+                                height: 1,
+                                margin: EdgeInsets.symmetric(
+                                    horizontal: 64, vertical: 12),
+                              );
                       },
                     ),
                   ),

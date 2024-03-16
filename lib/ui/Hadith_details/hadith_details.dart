@@ -24,6 +24,7 @@ class HadethDetailsScreen extends StatelessWidget {
               Container(
                 child: Expanded(
                   child: Card(
+                    color: Theme.of(context).primaryColor,
                     elevation: 24,
                     margin: EdgeInsets.symmetric(vertical: 48, horizontal: 12),
                     shape: RoundedRectangleBorder(

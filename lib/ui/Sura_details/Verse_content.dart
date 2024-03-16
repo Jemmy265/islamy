@@ -9,10 +9,13 @@ class VerseContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      child: Text(
-        content,
-        textAlign: TextAlign.center,
-        style: Theme.of(context).textTheme.bodyText2,
+      child: Directionality(
+        textDirection: TextDirection.rtl,
+        child: Text(
+          content,
+          textAlign: TextAlign.center,
+          style: Theme.of(context).textTheme.bodyText2,
+        ),
       ),
     );
   }

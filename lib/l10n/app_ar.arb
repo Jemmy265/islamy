@@ -1,6 +1,6 @@
 {
-  "app_title": "أسلامي",
-  "chapter_name": "أسم السوره",
+  "app_title": "إسلامي",
+  "chapter_name": "أسم السورة",
   "hadeth_number": "رقم الحديث",
   "quran": "القرآن",
   "hadith": "الحديث",
@@ -11,5 +11,6 @@
   "light": "فاتح",
   "dark": "داكن",
   "language": "اللغة",
-  "tasbehnumber": "عدد التسبيحات"
+  "tasbehnumber": "عدد التسبيحات",
+  "zakah": "الزكاة"
 }

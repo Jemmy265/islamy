@@ -8,6 +8,9 @@ class Mythemedata {
   static const Color darkAccentColor = Color(0xFFFACC1D);
 
   static var lightTheme = ThemeData(
+      dialogTheme: DialogTheme(
+        backgroundColor: lightPrimaryColor,
+      ),
       elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
               backgroundColor:
@@ -16,7 +19,7 @@ class Mythemedata {
           const ProgressIndicatorThemeData(color: lightPrimaryColor),
       cardColor: Colors.white,
       primaryColor: lightPrimaryColor,
-      accentColor: lightPrimaryColor,
+      hintColor: lightPrimaryColor,
       scaffoldBackgroundColor: Colors.transparent,
       appBarTheme: const AppBarTheme(
           backgroundColor: Colors.transparent,
@@ -36,6 +39,10 @@ class Mythemedata {
           // screen title
           color: lightMainTextColor,
           fontSize: 32,
+        ),
+        bodySmall: TextStyle(
+          color: lightMainTextColor,
+          fontSize: 16,
         ),
         headlineSmall: TextStyle(
           // sub headers
@@ -60,6 +67,9 @@ class Mythemedata {
             ),
           )));
   static var darkTheme = ThemeData(
+      dialogTheme: DialogTheme(
+        backgroundColor: darkPrimaryColor,
+      ),
       elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
               backgroundColor:
@@ -68,7 +78,7 @@ class Mythemedata {
           const ProgressIndicatorThemeData(color: darkAccentColor),
       cardColor: darkPrimaryColor,
       primaryColor: darkPrimaryColor,
-      accentColor: darkAccentColor,
+      hintColor: darkAccentColor,
       scaffoldBackgroundColor: Colors.transparent,
       appBarTheme: const AppBarTheme(
           backgroundColor: Colors.transparent,
@@ -84,6 +94,10 @@ class Mythemedata {
           selectedItemColor: darkAccentColor,
           unselectedItemColor: Colors.white),
       textTheme: const TextTheme(
+        bodySmall: TextStyle(
+          color: Colors.white,
+          fontSize: 16,
+        ),
         displaySmall: TextStyle(
           // screen title
           color: darkMainTextColor,

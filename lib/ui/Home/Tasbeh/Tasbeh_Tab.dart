@@ -16,8 +16,6 @@ class _TasbehTebState extends State<TasbehTeb> {
     'سبحان الله',
     "الحمد لله",
     "الله اكبر",
-    "لا اله الا الله",
-    "لا حول ولا قوة الا بالله"
   ];
 
   @override
@@ -112,7 +110,7 @@ class _TasbehTebState extends State<TasbehTeb> {
   void tsbeeeh() {
     if (sebhaCounter == 32) {
       sebhaCounter = 0;
-      if (tsbeehatCounter == 4) {
+      if (tsbeehatCounter == 2) {
         tsbeehatCounter = 0;
       } else {
         tsbeehatCounter++;
