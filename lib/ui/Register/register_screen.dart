@@ -109,7 +109,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                   ElevatedButton(
                       onPressed: () {
-                        register();
                         Navigator.pushReplacementNamed(
                             context, HomeScreen.routeName);
                       },
@@ -166,13 +165,15 @@ class _RegisterScreenState extends State<RegisterScreen> {
       } else if (e.code == 'email-already-in-use') {
         errorMessage = 'The account already exists for that email.';
       }
-      dialogs.showMessage(context, errorMessage, PosActionName: "Ok");
+      dialogs.showMessage(context, e.toString(), PosActionName: "Ok");
     } catch (e) {
       dialogs.hidedialog(context);
       String errorMessage = 'Something went wrong';
-      dialogs.showMessage(context, errorMessage,
+      dialogs.showMessage(context, e.toString(),
           PosActionName: "Cancel", NegActionName: "Try again", NegAction: () {
         register();
+      }, PosAction: () {
+        Navigator.pop(context);
       });
     }
   }

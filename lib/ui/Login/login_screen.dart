@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:islamy/Database/my_database.dart';
 import 'package:islamy/Dialogs.dart';
 import 'package:islamy/providers/settings_provider.dart';
 import 'package:islamy/ui/Home/Home_Screen.dart';
@@ -114,8 +113,6 @@ class _LoginScreenState extends State<LoginScreen> {
         email: emailcontroller.text,
         password: passwordcontroller.text,
       );
-      var user = await MyDatabase.readUser(result.user!.uid);
-      dialogs.hidedialog(context);
       // if (user == null) {
       //   // user is authenticated but not found in the database
       //   dialogs.showMessage(context, "Can't find user in database",dismissable: false,PosActionName: "Ok");
@@ -134,11 +131,11 @@ class _LoginScreenState extends State<LoginScreen> {
       } else if (e.code == 'wrong-password') {
         errorMessage = 'Wrong password provided for that user.';
       }
-      dialogs.showMessage(context, errorMessage, PosActionName: "Ok");
+      dialogs.showMessage(context, e.toString(), PosActionName: "Ok");
     } catch (e) {
       dialogs.hidedialog(context);
       String errorMessage = 'Something went wrong';
-      dialogs.showMessage(context, errorMessage,
+      dialogs.showMessage(context, e.toString(),
           PosActionName: "Cancel", NegActionName: "Try again", NegAction: () {
         Login();
       });
