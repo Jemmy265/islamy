@@ -30,7 +30,7 @@ class settingstab extends StatelessWidget {
                   color: Theme.of(context).cardColor,
                   borderRadius: BorderRadius.circular(12),
                   border: Border.all(
-                    color: Theme.of(context).accentColor,
+                    color: Theme.of(context).hintColor,
                     width: 1,
                   )),
               child: Text(
@@ -61,7 +61,7 @@ class settingstab extends StatelessWidget {
                     color: Theme.of(context).cardColor,
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
-                      color: Theme.of(context).accentColor,
+                      color: Theme.of(context).hintColor,
                       width: 1,
                     )),
                 child: Text(

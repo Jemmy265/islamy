@@ -53,8 +53,8 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
                       itemCount: chaptercontent.length,
                       separatorBuilder: (buildContext, index) {
                         return Container(
-                          color: Theme.of(context).accentColor,
-                          width: double.infinity,
+                                color: Theme.of(context).hintColor,
+                                width: double.infinity,
                           height: 1,
                           margin: EdgeInsets.symmetric(
                               horizontal: 64, vertical: 12),

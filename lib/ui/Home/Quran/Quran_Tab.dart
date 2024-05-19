@@ -130,7 +130,7 @@ class QuranTeb extends StatelessWidget {
         Container(
           width: double.infinity,
           height: 2,
-          color: Theme.of(context).accentColor,
+          color: Theme.of(context).hintColor,
           margin: EdgeInsets.only(bottom: 4),
         ),
         Text(
@@ -140,7 +140,7 @@ class QuranTeb extends StatelessWidget {
         Container(
           width: double.infinity,
           height: 2,
-          color: Theme.of(context).accentColor,
+          color: Theme.of(context).hintColor,
           margin: EdgeInsets.only(top: 4),
         ),
         Expanded(
@@ -155,7 +155,7 @@ class QuranTeb extends StatelessWidget {
               itemCount: names.length,
               separatorBuilder: (buildContext, index) {
                 return Container(
-                  color: Theme.of(context).accentColor,
+                  color: Theme.of(context).hintColor,
                   width: double.infinity,
                   height: 1,
                   margin: EdgeInsets.symmetric(horizontal: 24),

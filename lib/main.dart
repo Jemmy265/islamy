@@ -24,6 +24,7 @@ class MyApplication extends StatelessWidget {
   Widget build(BuildContext context) {
     var provider = Provider.of<SettingsProvider>(context);
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       initialRoute: SplashScreen.routeName,
       routes: {
         HomeScreen.routeName: (buildContext) => HomeScreen(),

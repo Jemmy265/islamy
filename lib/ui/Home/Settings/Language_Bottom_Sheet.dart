@@ -40,11 +40,11 @@ class LanguageBottomSheet extends StatelessWidget {
           style: Theme.of(context)
               .textTheme
               .bodyMedium
-              ?.copyWith(color: Theme.of(context).accentColor),
+              ?.copyWith(color: Theme.of(context).hintColor),
         ),
         Icon(
           Icons.check,
-          color: Theme.of(context).accentColor,
+          color: Theme.of(context).hintColor,
         )
       ],
     );

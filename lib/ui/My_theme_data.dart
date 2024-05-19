@@ -16,7 +16,7 @@ class Mythemedata {
           const ProgressIndicatorThemeData(color: lightPrimaryColor),
       cardColor: Colors.white,
       primaryColor: lightPrimaryColor,
-      accentColor: lightPrimaryColor,
+      hintColor: lightPrimaryColor,
       scaffoldBackgroundColor: Colors.transparent,
       appBarTheme: const AppBarTheme(
           backgroundColor: Colors.transparent,
@@ -68,7 +68,7 @@ class Mythemedata {
           const ProgressIndicatorThemeData(color: darkAccentColor),
       cardColor: darkPrimaryColor,
       primaryColor: darkPrimaryColor,
-      accentColor: darkAccentColor,
+      hintColor: darkAccentColor,
       scaffoldBackgroundColor: Colors.transparent,
       appBarTheme: const AppBarTheme(
           backgroundColor: Colors.transparent,

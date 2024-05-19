@@ -3,7 +3,6 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islamy/providers/settings_provider.dart';
 import 'package:islamy/ui/Home/Hadeth/Hadeth_Tab.dart';
 import 'package:islamy/ui/Home/Quran/Quran_Tab.dart';
-import 'package:islamy/ui/Home/Radio/Radio_Tab.dart';
 import 'package:islamy/ui/Home/Settings/SettingsTab.dart';
 import 'package:islamy/ui/Home/Tasbeh/Tasbeh_Tab.dart';
 import 'package:provider/provider.dart';
@@ -52,10 +51,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   backgroundColor: Theme.of(context).primaryColor,
                   icon: ImageIcon(AssetImage("assets/images/icon_sebha.png")),
                   label: AppLocalizations.of(context)!.tasbeh),
-              BottomNavigationBarItem(
-                  backgroundColor: Theme.of(context).primaryColor,
-                  icon: ImageIcon(AssetImage("assets/images/icon_radio.png")),
-                  label: AppLocalizations.of(context)!.radio),
+              // BottomNavigationBarItem(
+              //     backgroundColor: Theme.of(context).primaryColor,
+              //     icon: ImageIcon(AssetImage("assets/images/icon_radio.png")),
+              //     label: AppLocalizations.of(context)!.radio),
               BottomNavigationBarItem(
                   backgroundColor: Theme.of(context).primaryColor,
                   icon: Icon(Icons.settings),
@@ -70,7 +69,6 @@ class _HomeScreenState extends State<HomeScreen> {
     QuranTeb(),
     HadethTeb(),
     TasbehTeb(),
-    RadioTeb(),
     settingstab(),
   ];
 }
