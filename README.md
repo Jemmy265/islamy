@@ -13,7 +13,7 @@ The application supports Light and Dark themes
 The applications supports Arabic and English 
 
 <div align="center">
-  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Quran_tab.png" width="600" height="600"/>
+  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Quran_tab.png" width="700" height="700"/>
 </div>
 <div align="center">
   <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Habeth_tab.png" width="600" height="300"/>
