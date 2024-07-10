@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islamy/ui/Home/Quran/Verse_name.dart';
 
 class QuranTeb extends StatelessWidget {
@@ -123,43 +124,44 @@ class QuranTeb extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.asset("assets/images/qur2an_screen_logo.png"),
+        Expanded(
+            flex: 1,
+            child: Image.asset("assets/images/qur2an_screen_logo.png")),
         Container(
           width: double.infinity,
           height: 2,
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).hintColor,
           margin: EdgeInsets.only(bottom: 4),
         ),
         Text(
-          "Verse Name",
-          style: TextStyle(
-            fontSize: 24,
-          ),
+          AppLocalizations.of(context)!.chapter_name,
+          style: Theme.of(context).textTheme.headline5,
         ),
         Container(
           width: double.infinity,
           height: 2,
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).hintColor,
           margin: EdgeInsets.only(top: 4),
         ),
         Expanded(
+            flex: 3,
             child: ListView.separated(
-          itemBuilder: (buildContext, index) {
-            return VersenameWidget(
-              title: names[index],
-              index: index,
-            );
-          },
-          itemCount: names.length,
-          separatorBuilder: (buildContext, index) {
-            return Container(
-              color: Theme.of(context).primaryColor,
-              width: double.infinity,
-              height: 1,
-              margin: EdgeInsets.symmetric(horizontal: 24),
-            );
-          },
-        ))
+              itemBuilder: (buildContext, index) {
+                return VersenameWidget(
+                  title: names[index],
+                  index: index,
+                );
+              },
+              itemCount: names.length,
+              separatorBuilder: (buildContext, index) {
+                return Container(
+                  color: Theme.of(context).hintColor,
+                  width: double.infinity,
+                  height: 1,
+                  margin: EdgeInsets.symmetric(horizontal: 24),
+                );
+              },
+            ))
       ],
     );
   }
