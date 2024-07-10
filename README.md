@@ -14,6 +14,9 @@ The applications supports Arabic and English
 
 <div align="center">
   <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Quran_tab.png" width="700"/>
+  <h1>
+  hey there
+</h1>
 </div>
 <div align="center">
   <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Habeth_tab.png" width="700"/>
