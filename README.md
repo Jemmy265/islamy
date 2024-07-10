@@ -14,26 +14,25 @@ The applications supports Arabic and English
 
 <div align="center">
   <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Quran_tab.png" width="700" height="700"/>
-  This is the Quran light Tab
 </div>
 <div align="center">
-  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Habeth_tab.png" width="600" height="300"/>
+  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Habeth_tab.png" width="700" height="700"/>
 </div>
 <div align="center">
-  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Sebha_tab.png" width="600" height="300"/>
+  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Sebha_tab.png" width="700" height="700"/>
 </div>
 <div align="center">
-  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Settings_tab.png" width="600" height="300"/>
+  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Settings_tab.png" width="700" height="700"/>
 </div>
 <div align="center">
-  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Quran_tab_dark.png" width="600" height="300"/>
+  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Quran_tab_dark.png" width="700" height="700"/>
 </div>
 <div align="center">
-  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Hadeth_tab_dark.png" width="600" height="300"/>
+  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Hadeth_tab_dark.png" width="700" height="700"/>
 </div>
 <div align="center">
-  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Sebha_tab_dark.png" width="600" height="300"/>
+  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Sebha_tab_dark.png" width="700" height="700"/>
 </div>
 <div align="center">
-  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Settings_tab_dark.png" width="600" height="300"/>
+  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Settings_tab_dark.png" width="700" height="700"/>
 </div>
