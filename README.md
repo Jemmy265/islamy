@@ -13,50 +13,62 @@ The application supports Light and Dark themes
 The applications supports Arabic and English 
 
 <div align="center">
-  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Quran_tab.png" width="700"/>
-  <h1>
+    <h1>
   This is the Quran light tab
 </h1>
+  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Quran_tab.png" width="700"/>
 </div>
 <div align="center">
-  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Habeth_tab.png" width="700"/>
-  <h1>
+    <h1>
   This is the Hadeth light tab
 </h1>
+  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Habeth_tab.png" width="700"/>
 </div>
 <div align="center">
-  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Sebha_tab.png" width="700"/>
-  <h1>
+    <h1>
   This is the Sebha light tab
 </h1>
+  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Sebha_tab.png" width="700"/>
 </div>
 <div align="center">
-  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Settings_tab.png" width="700"/>
-  <h1>
+    <h1>
   This is the Settings light tab
 </h1>
+  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Settings_tab.png" width="700"/>
 </div>
 <div align="center">
-  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Quran_tab_dark.png" width="700"/>
-  <h1>
+    <h1>
   This is the Quran dark tab with Arabic Language
 </h1>
+  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Quran_tab_dark.png" width="700"/>
 </div>
 <div align="center">
-  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Hadeth_tab_dark.png" width="700"/>
-  <h1>
+    <h1>
   This is the Hadeth dark tab with Arabic Language
 </h1>
+  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Hadeth_tab_dark.png" width="700"/>
 </div>
 <div align="center">
-  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Sebha_tab_dark.png" width="700"/>
-  <h1>
+    <h1>
   This is the Sebha dark tab with Arabic Language
 </h1>
+  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Sebha_tab_dark.png" width="700"/>
 </div>
 <div align="center">
-  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Settings_tab_dark.png" width="700"/>
-  <h1>
+    <h1>
   This is the Settings dark tab with Arabic Language
 </h1>
+  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Settings_tab_dark.png" width="700"/>
+</div>
+<div align="center">
+    <h1>
+  This is the Quran Display page
+</h1>
+  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Quran_Display.png" width="700"/>
+</div>
+<div align="center">
+    <h1>
+  This is the Hadeth Display page
+</h1>
+  <img src="https://github.com/Jemmy265/islamy/blob/master/Screenshots/Hadeth_Display.png" width="700"/>
 </div>
